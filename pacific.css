@@ -1,0 +1,87 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body {
+	background-image: url(ptrbackground.jpg); /*creates a background image for the entire website*/
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#wrapper { /*create the white square in the background*/
+    background-color: #FFFFFF;
+    width: 1000px;
+    margin-left: 450px; /* margin will center the white rectangle to the center of the website*/
+}
+
+/*main title*/
+h1 {
+	padding: 10px; /*gives some space in the title with padding around the letters*/
+	color:#FFFFFF;
+	background-image: url(sunset.jpg);
+	background-position: right; /*need background-position to have the image fully displayed across the screen*/
+	background-size: cover; /*need this so that the image will stretch to the width of the website, otherwise the image will repeat itself over and over*/
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+nav {
+    background-color: #6abfea;
+    width: 150px; /*height and width of the blue rectangle inside the white rectangle*/
+    height: 300px;
+	margin-bottom: -320px; /*negative value otherwise rest of the content will go all the way down towards the bottom, will result in a spacing issue*/
+	margin-top: -22px; /*removes the space on the bottom between the main title and content*/
+}
+
+/*hyperlinks*/
+nav ul {
+	font-size: 15px;
+	list-style-type: none; /*removes bullet points for the four categories*/
+}
+
+nav a:visited {
+	color: #344873; /*change color of links when visited*/
+}
+
+nav a:hover {
+	color: #FFFFFF; /*change color of links when visited*/
+}
+
+nav a {
+	text-decoration: none; /*this will remove the bullet points from every list item with "a" in it*/
+	font-weight: bold; /*makes each items in the list bold*/
+}
+
+/*main content*/
+h2 {
+	color: #3399CC;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+span.resort { 
+	color: #3399CC;
+	font-weight: bold; /*makes the font for "Pacific Trails Resort" bold*/
+}
+
+#content {
+    margin-left: 160px;  /* This will shift all the content over to the right as it sets a margin on the left*/
+}
+
+#content ul li {
+    list-style-image: url(marker.gif); /* Add custom bullet point image for each bullet point */
+}
+
+#content img {
+    float: left; /*This moves image to the left for positioning*/
+	margin-right: 30px; /* creates a margin between the image and the list so the bullet points don't stack on top of each other */
+}
+
+/*footer*/
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	margin-left: 160px;  /* This will shift whatever is in content over to the right as it sets a margin on the left*/
+	padding-top: 0px; /*padding will ensure the email contact and copyright isn't at the bottom of the page*/
+  	padding-right: 30px;
+  	padding-bottom: 20px;
+  	padding-left: 0px;
+}
